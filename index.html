@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div class="display">
+                    <input id="result" type="text">
+                </div><br>
+                <div>
+                    <input type="button" value="AC" class="ac c" onclick="Allclear()">
+                    <input type="button" value="DE" class="de e" onclick="backspace()">
+                    <input type="button" value="." class="c" onclick="displaydata('.')">
+                    <input type="button" value="/" class="operator c" onclick="displaydata('/')">
+
+                    
+                </div><br>
+                <div>
+                    <input type="button" value="7" onclick="displaydata(7)" >
+                    <input type="button" value="8"  onclick="displaydata(8)">
+                    <input type="button" value="9" onclick="displaydata(9)">
+                    <input type="button" value="*" class="operator c" onclick="displaydata('*')">
+
+                </div><br>
+                
+                <div>
+                    <input type="button" value="4" onclick="displaydata(4)">
+                    <input type="button" value="5" onclick="displaydata(5)" >
+                    <input type="button" value="6" onclick="displaydata(6)" >
+                    <input type="button" value="-" class="operator c" onclick="displaydata('-')">
+
+                </div><br>
+                <div>
+                    <input type="button" value="1" onclick="displaydata(1)">
+                    <input type="button" value="2" onclick="displaydata(2)">
+                    <input type="button" value="3" onclick="displaydata(3)">
+                    <input type="button" value="+" class="operator c" onclick="displaydata('+')">
+
+                </div><br>
+
+                <div>
+                    <input type="button" value="00" onclick="displaydata('00')">
+                    <input type="button" value="0" onclick="displaydata(0)">
+                    <input type="button" value="=" class="equal" onclick="out()">
+                </div>
+
+
+            </form>
+     </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
